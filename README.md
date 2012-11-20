@@ -1,7 +1,7 @@
 CodeKata: The Bowling Game in Ruby
 ===================================
 
-![My image](https://www.evernote.com/shard/s250/sh/abd352d8-e102-476c-8766-f07a55444df2/c6add3da48a0756dc5d9c35dc7352920)
+![My image](https://www.evernote.com/shard/s250/sh/abd352d8-e102-476c-8766-f07a55444df2/c6add3da48a0756dc5d9c35dc7352920/res/1f53f2b9-f304-4bce-9baa-01cee7b5fc7f/skitch.png?resizeSmall&width=832)
 
 The game consists of 10 frames as shown above. In each frame the player has two opportunities to knock down 10 pins. The score for the frame is the total number of pins knocked down, plus bonuses for strikes and spares.
 
