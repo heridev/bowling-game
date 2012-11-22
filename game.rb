@@ -1,24 +1,29 @@
 require_relative 'frame'
 
 class Game
-  #in this method we add all the pins calculated by score in frame class
-  def self.score
-    total_score = 0
+
+  #obtain all frames with his pins
+  def generate_frames
     frame = Frame.new 5
     frame.generate_frames
     frame.print_values
-    array_frames = frame.score
-    array_frames.each_index do |index|
-      total_score = total_score + array_frames[index] 
-    end
+    frame.score
+  end
 
-    total_score
+  #in this method we add all the pins calculated by score in frame class
+  def calculate_score
+    array_frames = generate_frames
+    array_frames.reduce(0) {|memo, value|  memo + value }
+  end
+
+  #method used to print the total score
+  def print_total_score
+    puts "Your total score are: #{calculate_score}"
   end
 end
 
-puts "Your total score are: #{Game.score}"
-#require 'rspec'
-#describe Game do
-#end
+
+Game.new.print_total_score
+
 
 

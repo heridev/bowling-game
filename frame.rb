@@ -5,7 +5,6 @@ class Frame
     @count = count
   end
 
-
   def generate_frames
     @frames = []
     @count.times do |index|
@@ -28,7 +27,6 @@ class Frame
   end
 
   #def apply_rules
-
     #if lastelement 
       #LastFrame.something
     #end
@@ -68,7 +66,7 @@ class Frame
     end
       total_score
     # we spec an array formated like:
-    #[[5][10][20][35][58]]
+    #[5, 10, 20 , 35, 58]
   end
 
 end
